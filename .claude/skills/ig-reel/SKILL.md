@@ -24,10 +24,15 @@ python3 beats.py script.txt --target 30     # timed beat sheet before you shoot
 
 ## Before you write
 
-1. Read `~/.claude/instagram/voice.md` if it exists. That is the user's voice
-   profile: how they talk on camera, what they never say, who they are talking
-   to. If it does not exist, ask for **three of their own reels**, transcribe or
-   read them, infer the voice, and write the file. A script in the wrong voice
+1. Read the voice profile: `.claude/instagram/voice.md` in the current
+   project first, then `~/.claude/instagram/voice.md` if that is missing. It
+   says how the user talks on camera, what they never say, who they are
+   talking to. If it covers several brands, work out which one this Reel is
+   for, ask if unclear, and never mix tone, sign-off or CTA between them. If
+   the brand's format is faceless with no speech, write only the on-screen
+   text per scene with timings, not a spoken script. If neither file exists,
+   ask for **three of their own reels**, transcribe or read them, infer the
+   voice, and write `.claude/instagram/voice.md`. A script in the wrong voice
    is unusable, because they have to say it out loud.
 2. Read `hooks.json` in this folder. 26 formulas, each with a template, a filled
    example, the on-screen version, what it is for, and how it gets ruined.

@@ -14,7 +14,10 @@ executed. Run it once a week, on the same day.
 
 ## Input
 
-If `~/.claude/instagram/voice.md`, `swipe.md` and `log.md` exist, read them.
+Read the voice profile: `.claude/instagram/voice.md` in the current project
+first, then `~/.claude/instagram/voice.md`. If it covers several brands, plan
+each brand separately and never mix tone, sign-off or CTA between them. If
+`~/.claude/instagram/swipe.md` and `log.md` exist, read them too.
 The swipe file is the user's own evidence from `/ig-viral` about which formulas
 are landing in their niche right now, and it outranks anything in this file.
 The log stops the plan repeating a theme from the last fortnight.

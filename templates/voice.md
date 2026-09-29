@@ -1,6 +1,7 @@
 # voice.md
 
-Copy this to `~/.claude/instagram/voice.md` and fill it in. Every skill in the
+Copy this to `.claude/instagram/voice.md` in your project (or
+`~/.claude/instagram/voice.md`) and fill it in. Every skill in the
 pack reads it. Ten minutes here is the difference between scripts you shoot and
 scripts you rewrite.
 

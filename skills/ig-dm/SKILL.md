@@ -14,6 +14,18 @@ Instagram DMs are the only place on the platform where money actually changes
 hands, and they are also where most accounts burn the goodwill their content
 earned. The difference is entirely about who moved first.
 
+## Voice file
+
+Before writing anything, read the voice profile. Check these in order and use
+the first one that exists:
+
+1. `.claude/instagram/voice.md` in the current project
+2. `~/.claude/instagram/voice.md`
+
+If the file covers more than one brand or account, work out which one this is
+for before writing, and ask if it is not clear. Never mix tone, sign-off or CTA
+between brands. The voice file's own rules outrank the defaults in this skill.
+
 ## The three kinds of DM, and only three are worth writing
 
 **1. The reply to a hand raised.** They commented the keyword, answered the

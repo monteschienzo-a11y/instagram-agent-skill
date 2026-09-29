@@ -17,6 +17,18 @@ the first time, so slide two has to stand on its own as well.
 The format rewards one idea broken into steps. It punishes a caption cut into
 pieces.
 
+## Voice file
+
+Before writing anything, read the voice profile. Check these in order and use
+the first one that exists:
+
+1. `.claude/instagram/voice.md` in the current project
+2. `~/.claude/instagram/voice.md`
+
+If the file covers more than one brand or account, work out which one this is
+for before writing, and ask if it is not clear. Never mix tone, sign-off or CTA
+between brands. The voice file's own rules outrank the defaults in this skill.
+
 ## When to use it instead of a Reel
 
 Use a carousel when the idea has **sequence and needs to be re-read**: steps, a

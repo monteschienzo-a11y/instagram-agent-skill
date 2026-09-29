@@ -13,6 +13,18 @@ description: >-
 One good long asset contains four to six posts. Most people extract one and
 throw the rest away.
 
+## Voice file
+
+Before writing anything, read the voice profile. Check these in order and use
+the first one that exists:
+
+1. `.claude/instagram/voice.md` in the current project
+2. `~/.claude/instagram/voice.md`
+
+If the file covers more than one brand or account, work out which one this is
+for before writing, and ask if it is not clear. Never mix tone, sign-off or CTA
+between brands. The voice file's own rules outrank the defaults in this skill.
+
 ## Input
 
 A transcript, an article, a newsletter, a script, a call summary, a livestream.

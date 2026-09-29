@@ -18,6 +18,18 @@ A generic comment is worse than none. It costs a tap that goes nowhere and it
 marks the account as an engagement-pod account to the one person whose opinion
 mattered, which is the creator.
 
+## Voice file
+
+Before writing anything, read the voice profile. Check these in order and use
+the first one that exists:
+
+1. `.claude/instagram/voice.md` in the current project
+2. `~/.claude/instagram/voice.md`
+
+If the file covers more than one brand or account, work out which one this is
+for before writing, and ask if it is not clear. Never mix tone, sign-off or CTA
+between brands. The voice file's own rules outrank the defaults in this skill.
+
 ## Input
 
 The user pastes the post or reel text, or a screenshot, with the account name.

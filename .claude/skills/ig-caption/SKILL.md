@@ -21,6 +21,18 @@ It prints the caption the way the feed prints it: the first 125 characters in a
 box, everything else behind the tap. Read that box before you read anything
 else you wrote.
 
+## Voice file
+
+Before writing anything, read the voice profile. Check these in order and use
+the first one that exists:
+
+1. `.claude/instagram/voice.md` in the current project
+2. `~/.claude/instagram/voice.md`
+
+If the file covers more than one brand or account, work out which one this is
+for before writing, and ask if it is not clear. Never mix tone, sign-off or CTA
+between brands. The voice file's own rules outrank the defaults in this skill.
+
 ## First, decide which job this caption has
 
 This is the decision that ruins captions when it is skipped.

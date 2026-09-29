@@ -47,8 +47,10 @@ of a chat and it runs as a mode. You lose the five Python tools, which is most
 of the point of `/ig-reel` and `/ig-human`, but the rest works.
 
 Then spend ten minutes on `templates/voice.md`. Copy it to
-`~/.claude/instagram/voice.md` and fill it in, or send Claude three of your own
-reels and say "write my voice.md from these". Every skill reads that file. It
+`.claude/instagram/voice.md` in your project (or `~/.claude/instagram/voice.md`
+for all projects) and fill it in, or send Claude three of your own reels and
+say "write my voice.md from these". Every skill reads the project file first,
+then the home one. It
 matters more here than on other platforms, because you have to say the words
 out loud.
 
