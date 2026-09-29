@@ -26,15 +26,24 @@ import json
 import re
 import sys
 
-WORD_RE = re.compile(r"[A-Za-z0-9$%'’-]+")
+WORD_RE = re.compile(r"[\w$%'’-]+")   # Unicode \w: "três" is one word
 SENT_RE = re.compile(r"[^.!?]+[.!?]*")
-CONCRETE_RE = re.compile(r"\$\s?\d|\b\d[\d,.]*\b|(?<!^)\b[A-Z][a-z]{2,}\b", re.MULTILINE)
+CONCRETE_RE = re.compile(r"R?\$\s?\d|\b\d[\d,.]*\b|(?<!^)\b[A-ZÀ-ÖØ-Þ][a-zß-öø-ÿ]{2,}\b",
+                         re.MULTILINE)
 STOPWORDS = {
     "the", "a", "an", "and", "or", "but", "if", "of", "to", "in", "on", "for",
     "with", "that", "this", "it", "is", "are", "was", "were", "be", "been",
     "you", "your", "i", "my", "me", "we", "our", "they", "them", "he", "she",
     "so", "just", "not", "no", "do", "did", "does", "have", "has", "had",
     "will", "can", "at", "as", "by", "from", "out", "up", "off", "one", "all",
+    # Portuguese
+    "o", "os", "as", "um", "uma", "uns", "umas", "e", "ou", "mas", "se", "de",
+    "do", "da", "dos", "das", "em", "no", "na", "nos", "nas", "por", "pra",
+    "pro", "para", "com", "que", "isso", "isto", "esse", "essa", "este",
+    "esta", "é", "são", "foi", "era", "ser", "você", "voce", "vc", "vocês",
+    "seu", "sua", "eu", "meu", "minha", "nós", "gente", "ele", "ela", "eles",
+    "elas", "te", "só", "não", "nao", "já", "vai", "tem", "ao", "aos", "à",
+    "às", "mais", "muito", "também", "lá", "aqui",
 }
 
 HOOK_WINDOW = 3.0        # seconds. Past this, the thumb has already decided.
@@ -43,8 +52,9 @@ ABSTRACT_RUN = 3         # beats in a row with nothing checkable in them.
 
 
 def words(text):
-    # "$18,000" is one word when it is spoken, so it is one word here too.
-    return WORD_RE.findall(re.sub(r"(?<=\d),(?=\d)", "", text))
+    # "$18,000" and "R$ 1.200" are one figure when spoken, so one word here.
+    text = re.sub(r"(?<=\d),(?=\d)", "", text)
+    return WORD_RE.findall(re.sub(r"(?<=\d)\.(?=\d{3}\b)", "", text))
 
 
 def pretty(token):

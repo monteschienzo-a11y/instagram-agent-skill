@@ -36,14 +36,18 @@ import re
 import statistics
 import sys
 
-WORD_RE = re.compile(r"[A-Za-z0-9$%'’-]+")
+# \w is Unicode-aware, so "três", "você" and "promoção" stay one word.
+WORD_RE = re.compile(r"[\w$%'’-]+")
 NUMBER_RE = re.compile(
-    r"\$\s?\d[\d,]*(?:\.\d+)?"                       # money, whole
+    r"R?\$\s?\d[\d.,]*"                              # money, $ or R$
     r"|\b\d[\d,]*(?:\.\d+)?\s?"                      # a figure, with or
     r"(?:%|k\b|x\b|hrs?\b|hours?\b|mins?\b|minutes?\b"  # without a unit
-    r"|days?\b|weeks?\b|months?\b|years?\b)?",
+    r"|days?\b|weeks?\b|months?\b|years?\b"
+    r"|horas?\b|minutos?\b|dias?\b|semanas?\b|m[eê]s\b|meses\b|anos?\b)?",
     re.IGNORECASE)
-PROPER_RE = re.compile(r"(?<!^)\b[A-Z][a-z]{2,}\b")
+UPPER = "A-ZÀ-ÖØ-Þ"
+LOWER = "a-zß-öø-ÿ"
+PROPER_RE = re.compile(rf"(?<!^)\b[{UPPER}][{LOWER}]{{2,}}\b")
 HASHTAG_RE = re.compile(r"(?:^|\s)#\w+")
 EMOJI_RE = re.compile(r"[\U0001F300-\U0001FAFF☀-➿]")
 
@@ -56,10 +60,21 @@ SPOKEN_NUMBERS = {
     "ten", "eleven", "twelve", "fifteen", "twenty", "thirty", "forty", "fifty",
     "sixty", "seventy", "eighty", "ninety", "hundred", "thousand", "million",
     "billion", "dozen", "half", "twice", "triple",
+    # Portuguese. "um", "uma" and "primeiro" are left out for the same reason
+    # "one" and "first" are.
+    "dois", "duas", "três", "tres", "quatro", "cinco", "seis", "sete", "oito",
+    "nove", "dez", "onze", "doze", "quinze", "vinte", "trinta", "quarenta",
+    "cinquenta", "sessenta", "setenta", "oitenta", "noventa", "cem", "cento",
+    "duzentos", "trezentos", "quinhentos", "mil", "milhão", "milhao",
+    "milhões", "milhoes", "bilhão", "bilhao", "dúzia", "duzia", "metade",
+    "dobro", "triplo",
 }
 MONEY_WORDS = {
     "dollars", "dollar", "bucks", "grand", "percent", "cents",
     "millionaire", "billionaire", "revenue", "profit", "salary", "rent",
+    "reais", "conto", "contos", "pila", "centavos", "porcento", "desconto",
+    "preço", "preco", "parcela", "parcelas", "faturamento", "lucro",
+    "salário", "salario", "aluguel",
 }
 
 # Words that put something on the line. A hook with none of these is a
@@ -76,6 +91,18 @@ STAKES = {
     "before", "until", "instead", "but", "except", "unless", "problem",
     "risk", "danger", "warning", "regret", "wish", "should", "shouldn't",
     "still", "already", "only", "without", "versus", "vs", "actually",
+    # Portuguese. "para" is left out: it is far more often "for" than "stop".
+    "pare", "nunca", "errado", "errada", "erro", "erros", "perdi", "perdeu",
+    "perder", "perdendo", "custa", "custou", "quebrou", "falhou", "falha",
+    "ninguém", "ninguem", "não", "nao", "nem", "parei", "demitido", "apaguei",
+    "apague", "cortei", "cortou", "grátis", "gratis", "paguei", "cobrou",
+    "economizei", "economiza", "primeira", "primeiro", "proibido", "ilegal",
+    "pior", "odeio", "desperdicei", "desperdício", "desperdicio", "golpe",
+    "mentira", "mentiu", "verdade", "segredo", "escondido", "roubou",
+    "roubado", "antes", "até", "ate", "mas", "exceto", "problema", "risco",
+    "perigo", "cuidado", "alerta", "arrependo", "deveria", "ainda", "já",
+    "só", "somente", "apenas", "sem", "contra", "realmente", "último",
+    "última", "esgotou", "esgotado",
 }
 
 # Openers that spend the first second saying nothing.
@@ -86,6 +113,15 @@ WEAK_OPENERS = [
     "have you", "did you", "do you", "are you", "in this", "in today",
     "the thing", "a lot", "there is", "there are", "this is", "it is",
     "as a", "when it", "if you've", "you know",
+    # Portuguese. Longer phrases first, so the report names the whole opener.
+    "oi gente", "oi galera", "fala galera", "e aí", "e ai", "bom dia",
+    "boa tarde", "boa noite", "sejam bem-vindos", "hoje eu vou", "hoje vou",
+    "hoje eu", "é o seguinte", "e o seguinte", "deixa eu", "vou te mostrar",
+    "eu queria", "eu quero", "um dos", "uma das", "você já", "voce ja",
+    "vocês já", "neste vídeo", "nesse vídeo", "no vídeo", "isso é", "aqui é",
+    "tem muita", "tem muito", "existe", "oi", "olá", "ola", "galera", "gente",
+    "então", "entao", "bom", "bem", "tipo", "enfim", "hoje", "basicamente",
+    "sinceramente", "olha", "escuta", "bem-vindos",
 ]
 
 # Imperatives that earn the front position.
@@ -93,9 +129,20 @@ IMPERATIVES = {
     "stop", "steal", "copy", "delete", "try", "watch", "read", "save",
     "use", "build", "make", "write", "send", "take", "start", "quit",
     "never", "always", "don't", "dont", "do", "put", "run", "check",
+    "pare", "roube", "copie", "copia", "apague", "tente", "testa", "assista",
+    "veja", "leia", "salve", "salva", "use", "usa", "faça", "faz", "escreva",
+    "mande", "manda", "pegue", "pega", "comece", "começa", "garanta",
+    "garante", "aproveite", "aproveita", "corre", "confira", "confere",
+    "comenta", "comente", "chama", "vem", "nunca", "sempre",
 }
 
 DEALBREAKERS = [
+    (re.compile(r"(?i)^\s*(?:pare de rolar|para de rolar|não passa|nao passa|para de passar)"),
+     "Abre com \"para de rolar\". Pedir atenção prova que ela ainda não foi conquistada."),
+    (re.compile(r"(?i)\b(?:neste vídeo|nesse vídeo|no vídeo de hoje|vou te mostrar|vou mostrar pra vocês|hoje eu vou)\b"),
+     "Preâmbulo de vídeo. Apague e abra direto no que interessa."),
+    (re.compile(r"(?i)^\s*(?:oi\b|olá\b|ola\b|e a[íi]\b|fala galera|bom dia|boa tarde|boa noite|sejam bem-vindos)"),
+     "Saudação. Ninguém abriu o feed para ser cumprimentado."),
     (re.compile(r"(?i)^\s*(?:stop scrolling|don'?t scroll)"),
      "Opens with \"stop scrolling\". Asking for attention proves you have not earned it."),
     (re.compile(r"(?i)\b(?:in (?:this|today'?s) (?:video|reel)|i'?m going to show you|i'?ll show you how)\b"),
@@ -114,8 +161,9 @@ def clamp(n):
 
 
 def words(text):
-    # "$18,000" is one word when it is spoken, so it is one word here too.
-    return WORD_RE.findall(re.sub(r"(?<=\d),(?=\d)", "", text))
+    # "$18,000" and "R$ 1.200" are one figure when spoken, so one word here.
+    text = re.sub(r"(?<=\d),(?=\d)", "", text)
+    return WORD_RE.findall(re.sub(r"(?<=\d)\.(?=\d{3}\b)", "", text))
 
 
 def check_length(text):
@@ -153,7 +201,7 @@ def check_stakes(text):
     w = [x.lower().strip("'’") for x in words(text)]
     hits = [x for x in w if x in STAKES]
     markers = sorted(set(hits))
-    if re.search(r"\$\s?\d", text):
+    if re.search(r"R?\$\s?\d", text):
         markers.append("a price")
     n = len(markers)
     score = {0: 20.0, 1: 70.0}.get(n, 100.0)
@@ -202,11 +250,13 @@ def check_address(text):
     """Aimed at one viewer, or floating in the air."""
     low = text.lower()
     w = [x.lower().strip("'’") for x in words(text)]
-    if re.search(r"\b(you|your|you're|youre|yourself)\b", low):
+    if re.search(r"\b(you|your|you're|youre|yourself)\b", low) or \
+            re.search(r"(?<!\w)(você|voce|vc|vocês|voces|seu|sua|seus|suas|te|tu|contigo)(?!\w)", low):
         return 100.0, "speaks to the viewer"
     if w and w[0] in IMPERATIVES:
         return 90.0, f"imperative opener (\"{w[0]}\")"
-    if re.search(r"\b(i|my|me|we|our)\b", low):
+    if re.search(r"\b(i|my|me|we|our)\b", low) or \
+            re.search(r"(?<!\w)(eu|meu|minha|meus|minhas|nós|nos|nosso|nossa|a gente)(?!\w)", low):
         return 70.0, "first person, no viewer named"
     return 35.0, "third person, nobody in the room"
 
