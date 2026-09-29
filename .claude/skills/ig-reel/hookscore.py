@@ -168,11 +168,12 @@ def check_frontload(text):
     if not w:
         return 0.0, "empty"
     low = [x.lower().strip("'’") for x in w]
-    opener = " ".join(low[:2])
     penalty = 0
     hit_opener = None
     for weak in WEAK_OPENERS:
-        if opener.startswith(weak) or low[0] == weak:
+        # Whole words only: "you're" is not "yo", "some" is not "so".
+        parts = weak.split()
+        if low[:len(parts)] == parts:
             penalty, hit_opener = 30, weak
             break
     payload = None

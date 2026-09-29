@@ -135,13 +135,14 @@ Write it separately, every time. It is read before it is heard.
 
 ```
 HOOKS  (scored)
-  86  STRONG  #5  Time Collapse   "Proposals used to take me five hours. Twenty minutes now."
-                                  on screen: 5 HOURS -> 20 MIN
-  71  STRONG  #1  Cost Confession "I billed four hours a week for formatting. For two years."
+  81  STRONG  #1  Cost Confession "I lost four hours a week to formatting. For two years."
                                   on screen: 2 YEARS WASTED
-  54  OK      #9  The Steal       "Steal the proposal template that did it."
+  77  STRONG  #9  The Steal       "Steal the template that cut my proposals to twenty minutes."
                                   on screen: STEAL THIS
+  51  OK      #5  Time Collapse   "Proposals used to take me five hours. Twenty minutes now."
+                                  on screen: 5 HOURS -> 20 MIN
 
-Shooting #5: the ratio is believable, it reads in one glance on screen,
-and the number is yours.
+Shooting #1: the loss is named up front, the numbers are yours, and the
+five-hours-to-twenty ratio still lands in the body. #5 has no stake in
+it, which is why it scores lowest despite the cleanest on-screen card.
 ```
