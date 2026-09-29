@@ -98,8 +98,10 @@ Reply "yes" to log it, or tell me what to change.
 ```
 
 **7. Never publish.** This skill produces a script. The user shoots it and
-posts it. On "yes", append to `~/.claude/instagram/log.md` with the date, the
-hook formula used and the first line, so `/ig-audit` has a history later.
+posts it. On "yes", append to `.claude/instagram/log.md` in the current
+project (create it if missing) with the date, the brand, the hook formula used
+and the first line, so `/ig-audit` has a history later. The project file is
+committed with the repo, so the history survives the session.
 
 ## On-screen text is a separate script
 

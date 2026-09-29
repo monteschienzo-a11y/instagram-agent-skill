@@ -36,8 +36,9 @@ Ask for whichever the user has:
   screenshot is worth more than the rest combined.
 - Or just the posts and their view counts, which is enough for a first pass.
 
-Also read `~/.claude/instagram/log.md` if it exists, since it records which
-hook formula each post used.
+Also read the post log, since it records which hook formula each post used:
+`.claude/instagram/log.md` in the current project first, then
+`~/.claude/instagram/log.md` if that is missing.
 
 ## What to actually measure
 
