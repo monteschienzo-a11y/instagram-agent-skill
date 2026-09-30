@@ -59,7 +59,10 @@ ASKS = [
     # same link as "link na bio", so both are the one "link in bio" ask.
     (re.compile(r"(?i)\bcoment(?:a|e|ar) (?:a palavra |\")?[A-Z0-9]{2,}\b"), "comment a keyword"),
     (re.compile(r"(?i)\b(?:me )?cham(?:a|e) (?:no |na )?(?:direct|dm|inbox|privado)\b"
+                r"|\b(?:me )?cham(?:a|e) (?:no |na )?(?:whatsapp|whats|zap)\b"
                 r"|\bme chama\b|\bmand(?:a|e) (?:uma )?(?:mensagem|dm|direct)\b"), "DM me"),
+    (re.compile(r"(?i)\b(?:acess(?:a|e)|test(?:a|e)|experiment(?:a|e)|conhe[cç](?:a|e))"
+                r" (?:em |no |o |a )?[a-z0-9-]+\.(?:com|ai|app|io)(?:\.br)?\b"), "visit the site"),
     (re.compile(r"(?i)\bsalv(?:a|e) (?:esse|este|isso|o post|pra depois)\b"), "save this"),
     (re.compile(r"(?i)\bcompartilh(?:a|e)\b|\bmand(?:a|e) (?:pra|para) (?:quem|algu[eé]m|um amigo)\b"
                 r"|\bmarc(?:a|e) (?:quem|algu[eé]m|um amigo)\b"), "share this"),
