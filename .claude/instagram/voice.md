@@ -42,6 +42,7 @@ Este arquivo cobre várias contas. Antes de escrever qualquer coisa:
 ## SALL IA — @sall.ia.10
 - O que é: estúdio de criação com IA para todos — vídeo, imagem, texto, chat com IA, arquivos, apresentações. "Da ideia ao conteúdo pronto." Não é só um chat.
 - Tom: tech, premium e acessível — tecnologia avançada apresentada de forma simples, visual e desejável.
+- Formato: gravação de tela + texto na tela, sem fala. Mostrar o pedido sendo feito e o resultado aparecendo. Nunca gerar roteiro falado: só o texto de cada cena, com tempo.
 - Como mostrar: o produto funcionando e o resultado para o usuário. Nunca explicar código, conectores ou arquitetura.
 - Agentes (mostrar como modos que o usuário escolhe): Rápido, Complexo, Criativo, Rumb, Clamy, Master.
 - Planos, nesta ordem: FREE → GO → PRO → PLUS → BUSINESS. Não divulgar preços nem limites.
@@ -53,6 +54,8 @@ Este arquivo cobre várias contas. Antes de escrever qualquer coisa:
 - Escola: categorias Sub-6 a Sub-18. Pilares: Formação, Prática, Valores (respeito, compromisso, trabalho em equipe).
 - Clube: treinos intensos, competições (amistosos, torneios, campeonatos), representar o nome do Brabos FC e de Sertãozinho.
 - Público: famílias e jovens atletas da região.
+- Formato: texto na tela + música, sem fala. Nunca gerar roteiro falado: só o texto de cada cena, com tempo.
+- Imagem: sem rosto de atleta enquanto a autorização dos responsáveis não estiver confirmada. Usar só bola, chuteiras, pés em movimento, campo, cones e trave.
 - Tom: garra de clube, clima de noite de jogo. Textos institucionais em tom profissional.
 - Fatos: a Copa Condomínios (2026) foi a primeira competição do clube — nunca chamar de "competição oficial".
 - Patrocinadores: só Pot Of Foods, Niege e Mucci.
