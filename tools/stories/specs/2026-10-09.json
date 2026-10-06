@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-08",
+  "date": "2026-10-09",
   "brands": {
     "sallloja": {
       "handle": "@sallloja10",
@@ -11,56 +11,39 @@
           "size": 104,
           "blocks": [
             {
-              "kind": "kicker",
-              "text": "POV:"
+              "kind": "title",
+              "text": "Blox Fruits ou Steal a Brainrot?"
             },
             {
-              "kind": "title",
-              "text": "Seu Roblox sem esse item ficou no passado."
+              "kind": "sign",
+              "text": "você só pode escolher um."
             }
           ]
         },
         {
           "align": "flex-start",
-          "size": 104,
+          "size": 120,
           "blocks": [
             {
               "kind": "title",
-              "text": "Pedido confirmado."
-            },
-            {
-              "kind": "progress",
-              "percent": 94,
-              "label": "processando… 94%"
+              "text": "Qual você joga mais?"
             }
           ],
           "stickers": [
             {
-              "label": "CONTROLE DESLIZANTE\n“Nível de vontade:”",
+              "label": "QUIZ\nBlox Fruits x Steal a Brainrot",
               "top": 1180,
               "height": 240
             }
           ]
         },
         {
-          "blocks": [
-            {
-              "kind": "title",
-              "text": "Entrega concluída."
-            },
-            {
-              "kind": "sub",
-              "text": "item recebido ✓"
-            }
-          ]
-        },
-        {
           "align": "flex-start",
-          "size": 150,
+          "size": 120,
           "blocks": [
             {
               "kind": "title",
-              "text": "Já é seu."
+              "text": "Garante o seu."
             },
             {
               "kind": "sign",
@@ -88,31 +71,22 @@
           "blocks": [
             {
               "kind": "title",
-              "text": "Você ainda não viu isso de perto na Outlet."
-            }
-          ]
-        },
-        {
-          "size": 150,
-          "blocks": [
-            {
-              "kind": "title",
-              "text": "De perto."
+              "text": "Você não pode ficar sem algo novo na Outlet."
             }
           ]
         },
         {
           "align": "flex-start",
-          "size": 112,
+          "size": 120,
           "blocks": [
             {
               "kind": "title",
-              "text": "O detalhe faz o estilo."
+              "text": "Você decide."
             }
           ],
           "stickers": [
             {
-              "label": "CONTROLE DESLIZANTE\n“Combina com você?”",
+              "label": "CONTROLE DESLIZANTE\n“Quanto você quer algo novo?”",
               "top": 1180,
               "height": 240
             }
@@ -141,7 +115,63 @@
         }
       ]
     },
-    "salloutlet-sem-foto": {
+    "sallloja-com-enquete": {
+      "handle": "@sallloja10",
+      "paper": "#0F0F10",
+      "ink": "#F5F4EF",
+      "accent": "#4C7DFF",
+      "assets": "sallloja",
+      "screens": [
+        {
+          "size": 112,
+          "blocks": [
+            {
+              "kind": "title",
+              "text": "Só um vai pro seu inventário. Qual?"
+            }
+          ]
+        },
+        {
+          "align": "flex-start",
+          "size": 120,
+          "blocks": [
+            {
+              "kind": "title",
+              "text": "Você decide."
+            }
+          ],
+          "stickers": [
+            {
+              "label": "ENQUETE\nitem 1 x item 2\n(digite no app)",
+              "top": 1150,
+              "height": 280
+            }
+          ]
+        },
+        {
+          "align": "flex-start",
+          "size": 120,
+          "blocks": [
+            {
+              "kind": "title",
+              "text": "Garante o seu."
+            },
+            {
+              "kind": "sign",
+              "text": "SALL. Seu upgrade começa aqui."
+            }
+          ],
+          "stickers": [
+            {
+              "label": "FIGURINHA DE LINK\nsallloja.com",
+              "top": 1260,
+              "height": 200
+            }
+          ]
+        }
+      ]
+    },
+    "salloutlet-com-enquete": {
       "handle": "@sall.outlet.10",
       "paper": "#0F0F10",
       "ink": "#F5F4EF",
@@ -149,11 +179,15 @@
       "assets": "salloutlet",
       "screens": [
         {
-          "size": 120,
+          "size": 112,
           "blocks": [
             {
               "kind": "title",
-              "text": "O que falta no seu estilo?"
+              "text": "Esse ou esse?"
+            },
+            {
+              "kind": "sign",
+              "text": "sem ficar em cima do muro."
             }
           ]
         },
@@ -163,28 +197,28 @@
           "blocks": [
             {
               "kind": "title",
-              "text": "Pede aqui."
+              "text": "Você decide."
             }
           ],
           "stickers": [
             {
-              "label": "CAIXA DE PERGUNTAS\n“O que você quer ver chegando?”",
-              "top": 1180,
-              "height": 240
+              "label": "ENQUETE\nproduto 1 x produto 2\n(digite no app)",
+              "top": 1150,
+              "height": 280
             }
           ]
         },
         {
           "align": "flex-start",
-          "size": 96,
+          "size": 120,
           "blocks": [
             {
               "kind": "title",
-              "text": "SALL Outlet"
+              "text": "Garante o seu."
             },
             {
               "kind": "sign",
-              "text": "exclusividade e estilo."
+              "text": "SALL Outlet — exclusividade e estilo."
             }
           ],
           "stickers": [

@@ -8,3 +8,4 @@
 - 2026-10-05 · SALL Loja · carrossel 8 slides · capa "SEU ITEM DE ROBLOX SEM COMPLICAÇÃO" (78) · como comprar em 4 passos · sem prazo de entrega e sem número de produtos
 - 2026-10-05 · SALL Outlet · carrossel 8 slides · capa "VOCÊ NÃO PRECISA DE 4 LOJAS" (81) · roupa, tênis, chuteira e variedade · sem número de produtos
 - 2026-10-06 · SALL Loja · reel corrigido · cartão "ACABOU DE CHEGAR, MANO." → "OLHA ISSO, MANO." (sem item novo confirmado); MP4-guia em out/reels/sallloja-roblox-corrigido.mp4
+- 2026-10-06 · SALL Loja · legenda do reel corrigida: "Item de Roblox novo acabou de chegar na SALL." → "O item que faltava no seu Roblox. Garante o seu pelo link na bio."

@@ -121,7 +121,8 @@ def main():
             out_dir = ROOT / "out" / "stories" / date / key
             out_dir.mkdir(parents=True, exist_ok=True)
             for i, screen in enumerate(brand["screens"], 1):
-                bg = find_background(date, key, i)
+                # Variant folders (e.g. "salloutlet-sem-foto") read the brand's photos.
+                bg = find_background(date, brand.get("assets", key), i)
                 if not bg:
                     typographic.append(f"{key}/{i:02d}")
                 page = Path(tmp) / f"{key}-{i:02d}.html"
