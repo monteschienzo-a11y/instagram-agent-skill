@@ -163,14 +163,14 @@
           "blocks": [
             {
               "kind": "title",
-              "text": "Pede aqui."
+              "text": "Você decide."
             }
           ],
           "stickers": [
             {
-              "label": "CAIXA DE PERGUNTAS\n“O que você quer ver chegando?”",
-              "top": 1180,
-              "height": 240
+              "label": "ENQUETE\n“Tênis ou chuteira: o que\nfalta no seu estilo?”",
+              "top": 1150,
+              "height": 280
             }
           ]
         },
