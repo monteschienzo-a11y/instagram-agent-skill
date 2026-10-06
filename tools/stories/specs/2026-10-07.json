@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-07",
+  "brands": {
+    "sallloja": {
+      "handle": "@sallloja10",
+      "paper": "#0F0F10", "ink": "#F5F4EF", "accent": "#4C7DFF",
+      "screens": [
+        {"size": 112, "blocks": [
+          {"kind": "title", "text": "Você joga Roblox sem esse item?"},
+          {"kind": "sign", "text": "post novo no feed"}
+        ]},
+        {"align": "flex-start", "size": 72, "blocks": [
+          {"kind": "kicker", "text": "TOCA PRA VER ↓"}
+        ], "stickers": [
+          {"label": "REPOST DO REEL\n(compartilhe a versão corrigida)", "top": 520, "height": 720},
+          {"label": "CONTROLE DESLIZANTE\n“Esse item no seu inventário?”", "top": 1300, "height": 220}
+        ]}
+      ]
+    },
+    "salloutlet": {
+      "handle": "@sall.outlet.10",
+      "paper": "#0F0F10", "ink": "#F5F4EF", "accent": "#C6A15B",
+      "screens": [
+        {"size": 112, "blocks": [
+          {"kind": "title", "text": "Você ainda joga de chuteira gasta?"},
+          {"kind": "sign", "text": "post novo no feed"}
+        ]},
+        {"align": "flex-start", "size": 72, "blocks": [
+          {"kind": "kicker", "text": "TOCA PRA VER ↓"}
+        ], "stickers": [
+          {"label": "REPOST DO REEL NIKE", "top": 520, "height": 720},
+          {"label": "ENQUETE\n“Você joga em campo ou society?”", "top": 1300, "height": 220}
+        ]}
+      ]
+    }
+  }
+}

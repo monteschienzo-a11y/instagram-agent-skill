@@ -1,6 +1,6 @@
 # Stories 07 a 11/10/2026 · SALL Loja e SALL Outlet · Etapa 2 (texto das telas)
 
-Status: aguardando aprovação. Segunda (05) vai ao ar na terça (06). O conteúdo de terça foi removido.
+Status: aprovado em 06/10 (plano B de sexta = controle deslizante). Segunda (05) vai ao ar na terça (06). O conteúdo de terça foi removido.
 
 ## Ajustes aplicados
 
@@ -71,7 +71,7 @@ Gancho: **78 STRONG** "Esse ou esse? Você não pode ficar em cima do muro."
 | 02 | VOCÊ DECIDE. | Enquete {{produto 1}} x {{produto 2}} |
 | 03 | GARANTE O SEU. / SALL Outlet — exclusividade e estilo. | Link → salloutlet.com |
 
-Sem itens reais até sexta: a enquete não vai ao ar com opções inventadas. A tela 02 vira caixa de perguntas e o domingo usa a versão B.
+Plano B (sem itens reais até quinta): a enquete não vai ao ar com opções inventadas. A tela 02 usa **controle deslizante** (Loja: "Quanto você quer um item novo?" · Outlet: "Quanto você quer algo novo?"), para não repetir a caixa de perguntas de sábado, e o domingo usa a versão B.
 
 ## Sábado 10 · caixa de perguntas
 
