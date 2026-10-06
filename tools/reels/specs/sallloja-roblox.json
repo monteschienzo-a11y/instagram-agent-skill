@@ -4,7 +4,7 @@
   "paper": "#0F0F10", "ink": "#F5F4EF", "accent": "#4C7DFF",
   "cards": [
     {"start": 0.0,  "end": 2.5,  "text": "Você joga Roblox sem esse item?"},
-    {"start": 2.5,  "end": 4.5,  "text": "Acabou de chegar, mano."},
+    {"start": 2.5,  "end": 4.5,  "text": "Olha isso, mano."},
     {"start": 4.5,  "end": 8.0,  "text": "Preço e detalhes no site."},
     {"start": 8.0,  "end": 12.0, "text": "Garante o seu: link na bio."},
     {"start": 12.0, "end": 15.0, "text": "SALL.", "sub": "Seu upgrade começa aqui.", "size": 150}
