@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-05",
+  "brands": {
+    "sallloja": {
+      "handle": "@sallloja10",
+      "paper": "#0F0F10", "ink": "#F5F4EF", "accent": "#4C7DFF",
+      "screens": [
+        {"blocks": [
+          {"kind": "kicker", "text": "POV:"},
+          {"kind": "title", "text": "O item que faltava no seu Roblox."}
+        ]},
+        {"align": "flex-start", "size": 104, "blocks": [
+          {"kind": "title", "text": "Pedido confirmado."},
+          {"kind": "progress", "percent": 94, "label": "processando… 94%"}
+        ], "stickers": [
+          {"label": "CONTROLE DESLIZANTE\n“Quanto você quer esse item?”", "top": 1180, "height": 240}
+        ]},
+        {"blocks": [
+          {"kind": "title", "text": "Entrega concluída."},
+          {"kind": "sub", "text": "item recebido ✓"}
+        ]},
+        {"align": "flex-start", "size": 150, "blocks": [
+          {"kind": "title", "text": "Já é seu."},
+          {"kind": "sign", "text": "SALL. Seu upgrade começa aqui."}
+        ], "stickers": [
+          {"label": "FIGURINHA DE LINK\nsallloja.com", "top": 1260, "height": 200}
+        ]}
+      ]
+    },
+    "salloutlet": {
+      "handle": "@sall.outlet.10",
+      "paper": "#0F0F10", "ink": "#F5F4EF", "accent": "#C6A15B",
+      "screens": [
+        {"size": 104, "blocks": [
+          {"kind": "title", "text": "Você ainda não viu o que chegou na Outlet."}
+        ]},
+        {"size": 140, "blocks": [
+          {"kind": "title", "text": "Chegou na Outlet."}
+        ]},
+        {"align": "flex-start", "size": 120, "blocks": [
+          {"kind": "title", "text": "Olha o detalhe."}
+        ], "stickers": [
+          {"label": "CONTROLE DESLIZANTE\n“Quanto você quer?”", "top": 1180, "height": 240}
+        ]},
+        {"align": "flex-start", "size": 120, "blocks": [
+          {"kind": "title", "text": "Garante o seu."},
+          {"kind": "sign", "text": "SALL Outlet — exclusividade e estilo."}
+        ], "stickers": [
+          {"label": "FIGURINHA DE LINK\nsalloutlet.com", "top": 1260, "height": 200}
+        ]}
+      ]
+    }
+  }
+}

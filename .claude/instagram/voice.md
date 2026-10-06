@@ -27,6 +27,7 @@ Este arquivo cobre várias contas. Antes de escrever qualquer coisa:
 - CTA: "Link na bio" → sallloja.com. Alternativas: "Comenta EU QUERO", "Chama no direct".
 - Provas públicas: 45 produtos no site. [PREENCHER: entregas, avaliações reais]
 - Não usar em público: faturamento, metas, ticket médio, número de seguidores.
+- Visual dos stories (PROVISÓRIO, paleta neutra aprovada em 05/10/2026 até virem as cores oficiais): fundo #0F0F10, texto #F5F4EF, destaque #4C7DFF, fonte Liberation Sans Bold.
 - Exemplos reais de texto de tela e legenda: [PREENCHER com 3 reels]
 
 ## SALL Outlet — @sall.outlet.10
@@ -38,6 +39,7 @@ Este arquivo cobre várias contas. Antes de escrever qualquer coisa:
 - Assinatura: "SALL Outlet — exclusividade e estilo." (não usar a da SALL Loja).
 - CTA: "Link na bio" → salloutlet.com
 - Provas públicas: 43 produtos no site.
+- Visual dos stories (PROVISÓRIO, paleta neutra aprovada em 05/10/2026 até virem as cores oficiais): fundo #0F0F10, texto #F5F4EF, destaque #C6A15B, fonte Liberation Sans Bold.
 
 ## SALL IA — @sall.ia.10
 - O que é: estúdio de criação com IA para todos — vídeo, imagem, texto, chat com IA, arquivos, apresentações. "Da ideia ao conteúdo pronto." Não é só um chat.
