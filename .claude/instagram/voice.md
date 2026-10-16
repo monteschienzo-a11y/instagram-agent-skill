@@ -17,15 +17,17 @@ Este arquivo cobre várias contas. Antes de escrever qualquer coisa:
 ---
 
 ## SALL Loja — @sallloja10
-- O que vende: itens e contas de Roblox (Steal a Brainrot, Blox Fruits) em sallloja.com, com entrega rápida.
+- O que vende: itens e contas de Roblox (Steal a Brainrot, Blox Fruits) em sallloja.com.
 - Público: crianças e adolescentes que jogam Roblox. Muitas vezes quem paga são os pais: falar com o jogador, mas passar segurança para quem paga.
 - Formato: faceless, sem fala. Gameplay ou demonstração do item, cortes rápidos, música e texto na tela. Nunca gerar roteiro falado: só o texto de cada cena, com tempo.
 - Tom: a marca vendendo, com confiança (estilo Nike), não um cliente contando que comprou. Animado, direto.
-- Palavras: mano, insano, brabo, olha isso, acabou de chegar, entrega na hora, garante o seu, link na bio, SALL.
+- Palavras: mano, insano, brabo, olha isso, garante o seu, link na bio, SALL. ("acabou de chegar" só com item novo confirmado.)
 - Estrutura: produto em destaque → oferta ou preço → prova → CTA.
 - Assinatura que fecha todo vídeo: "SALL. Seu upgrade começa aqui." (exclusiva da SALL Loja).
 - CTA: "Link na bio" → sallloja.com. Alternativas: "Comenta EU QUERO", "Chama no direct".
-- Provas públicas: 45 produtos no site. [PREENCHER: entregas, avaliações reais]
+- Provas públicas: [PREENCHER: número atual de produtos, só depois de confirmado; entregas e avaliações reais]
+- Nunca prometer velocidade de entrega ("entrega na hora", "entrega rápida", prazos) sem dado confirmado.
+- Nunca citar número de produtos sem o dono confirmar o número atual.
 - Não usar em público: faturamento, metas, ticket médio, número de seguidores.
 - Visual dos stories (PROVISÓRIO, paleta neutra aprovada em 05/10/2026 até virem as cores oficiais): fundo #0F0F10, texto #F5F4EF, destaque #4C7DFF, fonte Liberation Sans Bold.
 - Exemplos reais de texto de tela e legenda: [PREENCHER com 3 reels]
@@ -38,7 +40,9 @@ Este arquivo cobre várias contas. Antes de escrever qualquer coisa:
 - Palavras: exclusividade, estilo, chegou, aproveita, garante o seu.
 - Assinatura: "SALL Outlet — exclusividade e estilo." (não usar a da SALL Loja).
 - CTA: "Link na bio" → salloutlet.com
-- Provas públicas: 43 produtos no site.
+- Provas públicas: [PREENCHER: número atual de produtos, só depois de confirmado]
+- Nunca citar número de produtos sem o dono confirmar o número atual.
+- "Chegou" só com produto real confirmado. Nunca citar Roblox nem itens de jogo.
 - Visual dos stories (PROVISÓRIO, paleta neutra aprovada em 05/10/2026 até virem as cores oficiais): fundo #0F0F10, texto #F5F4EF, destaque #C6A15B, fonte Liberation Sans Bold.
 
 ## SALL IA — @sall.ia.10

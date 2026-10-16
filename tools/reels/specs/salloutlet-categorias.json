@@ -1,0 +1,8 @@
+{"name":"salloutlet-categorias","brand":"SALL Outlet","paper":"#0F0F10","ink":"#F5F4EF","accent":"#C6A15B","cards":[
+ {"start":0.0,"end":2.0,"text":"Você ainda não viu a Outlet."},
+ {"start":2.0,"end":3.75,"text":"Roupa.","size":170},
+ {"start":3.75,"end":5.5,"text":"Tênis.","size":170},
+ {"start":5.5,"end":7.25,"text":"Chuteira.","size":150},
+ {"start":7.25,"end":9.0,"text":"Variedade.","size":140},
+ {"start":9.0,"end":12.0,"text":"Garante o seu:","sub":"link na bio."},
+ {"start":12.0,"end":15.0,"text":"SALL Outlet","sub":"exclusividade e estilo.","size":120}]}
